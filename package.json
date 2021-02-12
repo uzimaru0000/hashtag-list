@@ -1,0 +1,45 @@
+{
+  "name": "hashtag-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:server": "parcel build -t node --bundle-node-modules -d dist/server --no-source-maps ./src/server/main.ts",
+    "build:front": "parcel build --bundle-node-modules -d dist/client --no-source-maps ./src/client/index.html",
+    "watch:server": "parcel watch -t node --bundle-node-modules -d dist/server ./src/server/main.ts",
+    "watch:front": "parcel watch --bundle-node-modules -d dist/client ./src/client/index.html",
+    "build": "run-p build:*",
+    "watch": "run-p watch:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "micro": "^9.3.4",
+    "micro-redirect": "^1.0.2",
+    "microauth-twitter": "^0.1.1",
+    "microrouter": "^3.1.3",
+    "node-fetch": "^2.6.0",
+    "parcel": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {
+    "@now/node": "^1.5.1",
+    "@types/micro": "^7.3.3",
+    "@types/microrouter": "^3.1.1",
+    "@types/node-fetch": "^2.5.6",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@types/styled-components": "^5.1.0",
+    "elm-hot": "^1.1.4",
+    "node-elm-compiler": "^5.0.4",
+    "now": "^18.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.26.3",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  }
+}
